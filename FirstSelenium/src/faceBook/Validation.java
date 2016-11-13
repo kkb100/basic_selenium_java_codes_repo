@@ -17,7 +17,8 @@ public class Validation {
 		
 		
 	
-		boolean result = driver.getPageSource().toLowerCase().contains("david");	
+		boolean result = driver.getPageSource().toLowerCase().contains("david".toLowerCase());
+		
 		
 		Assert.assertTrue(result);
 //		Assert.assertFalse(result);

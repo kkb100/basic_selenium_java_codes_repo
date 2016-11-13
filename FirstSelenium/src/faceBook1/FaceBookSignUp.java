@@ -9,6 +9,7 @@ public class FaceBookSignUp {
 		
 		String geckoPath = "C:\\Automation\\projects\\Java_projects\\FirstSelenium\\drivers\\geckodriver-v0.11.1-win64\\geckodriver.exe";	
 		System.setProperty("webdriver.gecko.driver", geckoPath);
+		
 		WebDriver driver = new FirefoxDriver();
 		
 		FaceBookSignUpHome  facebooksignuphome = new FaceBookSignUpHome(driver);
