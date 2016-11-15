@@ -1,5 +1,4 @@
 package eCommerce_Junit;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -46,7 +45,7 @@ public class EcomRunPage {
            }
 		
 		
-		@Test 
+		@Test
         public void logTestLogin() {
         	ecomloginpage.enterUrl("http://live.guru99.com");
         	ecomloginpage.loginIn("test2@kkb.com", "123456");
@@ -55,7 +54,7 @@ public class EcomRunPage {
          	}
 	
 
-        @Test @Ignore
+        @Test 
         public void testLogOut() {
         	ecomloginpage.enterUrl("http://live.guru99.com");
         	ecomloginpage.loginIn("test@kkb.com", "123456");
@@ -77,7 +76,7 @@ public class EcomRunPage {
         public void testInvalidLog() {
         ecomloginpage.enterUrl("http://live.guru99.com");
         ecomloginpage.invalidPasswordLogin("test2@kkb.com", "232234");
-        ecomvalidate.validatetest("Invalid login or password");
+        ecomvalidate.validatetest("Invalid login or password.");
         	
         }
  

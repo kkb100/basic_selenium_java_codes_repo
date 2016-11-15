@@ -36,7 +36,7 @@ public class EcomLoginPage {
 				e.printStackTrace();
 			}
 			
-			//"test@kkb.com"
+			
 			
 			driver.findElement(By.id("email")).sendKeys(username);
 			
@@ -76,7 +76,7 @@ public class EcomLoginPage {
 			driver.findElement(By.xpath("//*[@id='header-account']/div/ul/li[5]/a")).click();	
 		}
 		
-		//Inalid password log
+		//Invalid password log
 		public void invalidPasswordLogin(String username, String password) {
 			driver.findElement(By.xpath("//*[@id='header']/div/div[2]/div/a/span[2]")).click();
 			driver.findElement(By.xpath("//*[@id='header-account']/div/ul/li[6]/a")).click();
@@ -103,11 +103,17 @@ public class EcomLoginPage {
 			
 			driver.findElement(By.id("send2")).click();
 			
-	
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
 		}
 		
 		
-	
 		public void tearDown(){
 			driver.quit();
 		}
