@@ -24,9 +24,7 @@ public class Desirecapability {
 		
 		driver = new FirefoxDriver(cap);
 		driver.quit();
-		
-		
-
+	
 	}
 
 }

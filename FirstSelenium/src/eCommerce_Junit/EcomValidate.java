@@ -18,7 +18,6 @@ public class EcomValidate {
 		//Assert.assertTrue("Does not contain", answer);
 		
 		boolean ans = driver.getPageSource().contains(user);
-		
 		Assert.assertTrue("Does not contain", ans);
 		
 	}

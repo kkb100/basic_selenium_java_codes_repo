@@ -2,16 +2,28 @@ package eCommerce_BasicTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MagentoHomePage {
 
 	public static void main(String[] args) {
 		
-String geckoPath = "C:\\Automation\\projects\\github_opensource_repos\\basic_selenium_java_codes_repo\\FirstSelenium\\drivers\\geckodriver-v0.11.1-win64\\geckodriver.exe";
-System.setProperty("webdriver.gecko.driver", geckoPath);
+		WebDriver driver;
 		
-		WebDriver driver = new FirefoxDriver();
+String geckoPath = System.getProperty("user.dir") + "\\drivers\\geckodriver-v0.11.1-win64\\geckodriver.exe";
+System.setProperty("webdriver.gecko.driver", geckoPath);
+
+
+//String chromePath = System.getProperty("user.dir") + "\\drivers\\chromedriver_win32\\chromedriver.exe";
+//System.setProperty("webdriver.chrome.driver", chromePath);
+
+//String geckoPath = "D:\\Automation\\work_repo\\basic_selenium_java_codes_repo\\FirstSelenium\\drivers\\geckodriver-v0.11.1-win64\\geckodriver.exe";
+//System.setProperty("webdriver.gecko.driver", geckoPath);
+
+            
+		driver = new FirefoxDriver();
+		//driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		driver.get("http://live.guru99.com");
