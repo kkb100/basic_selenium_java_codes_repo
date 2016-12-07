@@ -25,6 +25,7 @@ public class Gmail {
     }
     
     driver.manage().window().maximize();
+    
     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     driver.get("http://gmail.com");
     String text= driver.findElement(By.id("next")).getAttribute("value");
